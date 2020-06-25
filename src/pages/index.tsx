@@ -8,6 +8,5 @@ const Heading = styled.h1`
 
 function HomePage() {
 	return <Heading>Hello I am From Index page</Heading>;
-}
-
+}      
 export default HomePage;
