@@ -1,4 +1,5 @@
 import React from "react";
+import About from "components/About";
 import styled from "styled-components";
 
 const Heading = styled.h1`
@@ -6,7 +7,12 @@ const Heading = styled.h1`
 	color: green;
 `;
 
-function HomePage() {
-	return <Heading>Hello I am From Index page</Heading>;
-}      
+const HomePage = () => {
+	return (
+		<>
+			<Heading>Hello I am From Index page</Heading>
+			<About />
+		</>
+	);
+};
 export default HomePage;
