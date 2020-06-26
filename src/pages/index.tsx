@@ -10,6 +10,7 @@ const Heading = styled.h1`
 `;
 
 const HomePage = () => {
+
 	return (
 		<>
 			<Heading>Hello I am From Index page</Heading>
