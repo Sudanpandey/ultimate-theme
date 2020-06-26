@@ -1,9 +1,13 @@
 import React from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
+import { styled } from "theme";
+
 
 const Heading = styled.h1`
 	font-size: 40px;
-	color: red;
+	color: ${({ theme: { colors } }) => colors.navbar};
+	/* color: red; */
+
 `;
 
 function About() {
