@@ -9,6 +9,7 @@ const Heading = styled.h1`
 	/* color: green;          */
 `;
 
+
 const HomePage = () => {
 
 	return (
