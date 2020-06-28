@@ -1,0 +1,5 @@
+{
+	"watch": ["index.tsx"],
+	"exec": "npx tsc --project tsconfig.json && next dev",
+	"ext": "ts"
+}
