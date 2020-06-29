@@ -6,10 +6,24 @@ import { styled } from "theme";
 const Wrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
-	margin-top: 45px;
-	margin-left: 66px;
-	margin-right: 66px;
-	/* padding-top: 45px; */
+	
+
+	@media (min-width: 750px) {
+		.smallDeviceNav {
+			display: none;
+		}
+	}
+
+	@media (max-width: 749px) {
+		.largeDeviceNav {
+			display: none;
+		}
+	}
+
+	max-width: 64em;
+	width: calc(100% - 3rem);
+
+	margin: 45px auto 0 auto;
 `;
 
 const StyledUnorderedList = styled.ul`
@@ -17,20 +31,23 @@ const StyledUnorderedList = styled.ul`
 		/* margin-top: 40px; */
 		/* margin-right: 10px; */
 		padding: 8px;
-		
 	}
-	
 `;
 const StyledList = styled.li`
+	@media (min-width: 750px) {
+		display: inline;
+	}
 	text-decoration: none;
-	display: inline;
-	padding:8px;
+	padding: 10px;
 `;
 
 const AnchorTag = styled.a`
 	border-radius: 3px;
-	text-transform:uppercase;
-	padding: 3px;
+	text-transform: uppercase;
+	font-family: lft-etica, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	
+
 	color: ${({
 		theme: {
 			colors: { blackColor },
@@ -43,12 +60,15 @@ const AnchorTag = styled.a`
 				colors: { bgcolor },
 			},
 		}) => bgcolor};
+		
+		
+		
 	}
 
 	&:link {
-		/* padding:4px; */
+		
 		text-decoration: none;
-		font-size: 12px;
+		font-size: 10px;
 		font-weight: 700;
 	}
 `;
@@ -56,9 +76,10 @@ const AnchorTag = styled.a`
 const NavBar: FC<NavBarProps> = ({ logo, navItems }) => (
 	<Wrapper>
 		{logo}
-		<StyledUnorderedList>
+		<span className="smallDeviceNav">⋯</span>
+		<StyledUnorderedList className="largeDeviceNav">
 			{navItems.map(({ name, link }) => (
-				<StyledList >
+				<StyledList>
 					<AnchorTag href={link}>{name}</AnchorTag>
 				</StyledList>
 			))}
