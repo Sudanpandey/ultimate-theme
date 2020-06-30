@@ -13,7 +13,12 @@ const GlobalStyle = createGlobalStyle`
    
 }
 
-body, html{
+li {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
     padding: 0;
     margin: 0;
 

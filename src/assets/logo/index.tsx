@@ -1,10 +1,11 @@
 const Logo = () => (
+	<a href ="#">
 	<svg
 		x="0px"
 		y="0px"
 		viewBox="0 0 4320 504"
 		enableBackground="new 0 0 4320 504"
-		style={{ width: "8.571428571em",cursor:"pointer" }}
+		style={{ width: " 7.571428571em" ,cursor:"pointer"  }}
 	>
 		<polygon points="198,0 0,0 0,108 198,108 198,504 306,504 306,108 504,108 504,0 306,0"></polygon>
 		<polygon points="1008,198 720,198 720,0 612,0 612,198 612,306 612,504 720,504 720,306 1008,306 1008,504 1116,504 1116,306 1116,198 1116,0 1008,0"></polygon>
@@ -19,5 +20,6 @@ const Logo = () => (
 		<polygon points="3204,0 3204,108 3204,396 3204,504 3312,504 3708,504 3708,396 3312,396 3312,108 3708,108 3708,0 3312,0"></polygon>
 		<path d="M4212,0h-288h-108v108v288v108h108h288h108V396V108V0H4212z M4212,396h-288V108h288V396z"></path>
 	</svg>
+	</a>
 );
 export default Logo;
