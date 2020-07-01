@@ -43,21 +43,13 @@ const StyledUnorderedList = styled.ul`
 		line-height: 2.2;
 		white-space: normal;
 		cursor: pointer;
-		/* padding-left:5px; */
 		text-align: left;
-		/* text-rendering: optimizeLegibility; */
-		/* text-size-adjust: 100%; */
-		/* touch-action: manipulation; */
-		/* visibility: visible; */
 		white-space: normal;
 		font-weight: 50;
 		width: 12em;
 		font-size: 0.64em;
-		/* paddinig-x: 1em;
-		padding-y: 0.64em; */
 		letter-spacing: 0em;
 		text-transform: none;
-		/* background-color: transparent; */
 		display: flex;
 		flex-direction: column;
 		list-style-type: none;
@@ -91,8 +83,6 @@ const StyledUnorderedList = styled.ul`
 	}
 
 	li :not(:last-child) {
-		/* margin-top: 40px; */
-		/* margin-right: 10px; */
 		padding: 8px;
 	}
 `;
@@ -180,5 +170,5 @@ const NavBar: FC<NavBarProps> = ({ logo, navItems }) => (
 			</div>
 		</StyledUnorderedList>
 	</Wrapper>
-);
+);     
 export default NavBar;
