@@ -1,22 +1,8 @@
-import React from "react";
-import About from "components/About";
-// import styled from "styled-components";
-import { styled } from "theme";
+import NavBar from "components/navbar";
 
-const Heading = styled.h1`
-	font-size: 40px;
-	color: ${({ theme: { colors } }) => colors.buttonSecondary};
-	/* color: green;          */
-`;
+import { navItems } from "mock";
 
+import Logo from "assets/logo";
 
-const HomePage = () => {
-
-	return (
-		<>
-			<Heading>Hello I am From Index page</Heading>
-			<About />
-		</>
-	);
-};
+const HomePage = () => <NavBar logo={<Logo />} navItems={navItems} />;
 export default HomePage;

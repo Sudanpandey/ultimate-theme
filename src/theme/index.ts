@@ -6,7 +6,8 @@ const colors = {
 	buttonSecondary: "#442ebf",
 	navbar: "#7CFC00",
 
-	blackColor: "#262626",
+    blackColor: "#262626",
+    bgcolor:"#f4f4f4f4",
 	greenColor: "#82b440",
     whiteColor: "#FFFFFF",
     lightBlack:"#9E9E9E",

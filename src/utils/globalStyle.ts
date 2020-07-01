@@ -6,13 +6,19 @@ const GlobalStyle = createGlobalStyle`
     }
 *{
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0;
     margin: 0;
     font-family:"Roboto";
+   
 }
 
-body, html{
+li {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
     padding: 0;
     margin: 0;
 
